@@ -9,6 +9,7 @@ on:
 jobs:
   terraform:
     name: "Terraform"
+    runs-on: centos-latest
     steps:
       - uses: hashicorp/setup-terraform@v1
         with:
