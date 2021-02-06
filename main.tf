@@ -17,7 +17,7 @@ data "aws_ami" "centos8" {
 
   filter {
     name   = "name"
-    values = ["Centos 8 - basic installation"]
+    values = ["CentOS Linux 8"]
   }
 
   filter {
