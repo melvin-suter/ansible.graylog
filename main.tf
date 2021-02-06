@@ -11,29 +11,9 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {}
 
-data "aws_ami" "centos8" {
-  most_recent = true
-  owners           = ["aws-marketplace"]
-
-  filter {
-    name   = "name"
-    values = ["CentOS Linux 8"]
-  }
-
-  filter {
-    name   = "root-device-type"
-    values = ["ebs"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-}
-
 # Create a EC2 Instance
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.centos8.id
+  ami           = "ami-0a75a5a43b05b4d5f"
   instance_type = "t3.micro"
 
   tags = {
