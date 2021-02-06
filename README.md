@@ -1,6 +1,6 @@
 <a href="https://www.uniqconsulting.ch"><img src="https://www.uniqconsulting.ch/fileadmin/images/logo-main.png" alt="uniQconsulting" width="250px"/></a>
 
-# ansible.graylog
+# ansible.graylog - test
 
 
 This Ansible Role install, configure and update a Linux Graylog server. The following tasks will be configured:
