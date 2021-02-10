@@ -1,4 +1,8 @@
 ---
+- name: THIS FAILS
+  fail:
+    msg: is kaputt
+    
 - name: Install MongoDB
   dnf:
     name: "{{ graylog_packages_mongodb }}" 
