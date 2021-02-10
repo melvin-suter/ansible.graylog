@@ -15,7 +15,7 @@ Installation with One-Line-setup:
 curl https://raw.githubusercontent.com/uniQconsulting-ag/ansible.graylog/master/setup.sh | sh
 ```
 
-Installation with ansible-galaxy:
+Installation with ansible-galaxy:qq
 
 ``` bash
 ansible-galaxy install uniqconsulting.graylog
