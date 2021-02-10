@@ -2,7 +2,7 @@
 
 # ansible.graylog - test
 
-
+Test
 This Ansible Role install, configure and update a Linux Graylog server. The following tasks will be configured:
 * `Install and configure MongoDB`
 * `Install and configure Java`
