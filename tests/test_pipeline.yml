@@ -25,6 +25,8 @@
   - name: run playbook
     shell: |
       cd /etc/ansible/projects/uqcSetup
-      ansible-playbook install_1_appliance.yml | tee -a /tmp/test_repo/tests/test_output.log
+      ansible-playbook install_1_appliance.yml | tee -a /tmp/test_repo/tests/test_output.log | grep "failed=0" > /dev/null 2>&1 && echo "ok" || echo "failed"
+    register: test_run
+    failed_when: test_run.stdout != "ok"
   
 ...
